@@ -8,6 +8,35 @@ W celu połączenia programów w Pythonie i Ruscie wykorzystałem crate [`pyo3`]
 
 ## Budowanie i uruchamianie przykładu
 
+Aby moć korzystać z pakietu `maturin`, należy najpierw utworzyć środowisko wirtualne. Można to zrobić poprzez komendę
+
+```
+python3 -m venv venv
+```
+
+Następnie w zależności od systemu operacyjnego możemy aktywować środowisko wirtualne poprzez komendy:
+
+Linux
+```
+source venv/bin/activate
+```
+
+Windows (PowerShell)
+```
+.\venv\Scripts\activate.bat
+```
+
+Windows (cmd)
+```
+.\venv\Scripts\activate.bat
+```
+
+I zainstalować wymagane pakiety
+
+```
+pip3 install -r requirements.txt
+```
+
 W celu uruchomienia przykładu należy najpierw zbudować moduł w Ruście. W tym celu należy przejść do podfolderu `rsfract` i skorzystać z komendy
 
 ```
@@ -20,7 +49,7 @@ Następnie po zakończeniu budowania możemy uruchomić przykład poprzez urucho
 python3 main.py
 ```
 
-Na systemie unixopodobnym można również zrobić to za pomocą przygotowanego skrypu
+Na systemie Linux można również zrobić to za pomocą przygotowanego skrypu
 
 ```
 ./build_and_run.sh
