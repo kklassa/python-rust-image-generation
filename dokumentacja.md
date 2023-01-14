@@ -23,7 +23,7 @@ source venv/bin/activate
 
 Windows (PowerShell)
 ```
-.\venv\Scripts\activate.bat
+.\venv\Scripts\Activate.psl
 ```
 
 Windows (cmd)
